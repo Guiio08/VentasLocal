@@ -1,0 +1,225 @@
+<div class="form-container">
+  
+    <h1>DIMAG UNIFORMES</h1>
+    <form [formGroup]="form" (ngSubmit)="crearPedido()">
+          <legend>ORDEN DE COMPRA</legend>
+          <div class="row">
+            <div class="form-group col-6">
+              <label for="disabledTextInput" class="form-label">Nombre Cliente</label>
+              <input formControlName="nombreCliente" type="text" id="disabledTextInput" class="form-control" placeholder="Ingrese el Nombre del cliente">
+            </div>
+            <div class="form-group col-6">
+              <label for="disabledTextInput" class="form-label">Telefono</label>
+              <input formControlName="telefono" type="text" id="disabledTextInput" class="form-control" placeholder="Ingrese numero de telefono">
+            </div>
+          </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label class="form-label">Fecha Pedido</label>
+            <input formControlName="fechaPedido" type="date" class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+          <div class="form-group col-6">
+            <label class="form-label">Fecha Entrega</label>
+            <input formControlName="fechaEntrega" type="date" class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-2">
+            <label class="form-label">Cantidad</label>
+            <input formControlName="cantidad" type="number" class="form-control" placeholder="Cantidad">
+          </div>
+          
+          <div class="form-group col-6">
+            <label for="disabledSelect" class="form-label">Producto</label>
+            <select formControlName="modelo" id="disabledSelect" class="form-select">
+              <option *ngFor="let modelos of listaModelos">{{modelos.nombre_modelo}}</option>
+              <option>Uniforme antifluido</option>
+              <option>Delantal Cocinero</option>
+              <option>Pantalon Antifluido</option>
+              <option>Blusa Antifluido</option>
+              <option>Chaleco en dril</option>
+              <option>Chaleco enguatado</option>
+            </select>
+          </div>
+          <div class="form-group col-4">
+            <label for="disabledTextInput" class="form-label">Valor</label>
+            <input formControlName="nombreCliente" type="text" id="disabledTextInput" class="form-control" placeholder="Ingrese el Valor del producto">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-2">
+            <label for="disabledSelect" class="form-label">Genero</label>
+            <select formControlName="genero" id="disabledSelect" class="form-select">
+              <option>Hombre</option>
+              <option>Mujer</option>
+            </select>
+          </div>
+          <div class="form-group col-4">
+            <label for="disabledSelect" class="form-label">Modelo</label>
+            <select formControlName="modelo" id="disabledSelect" class="form-select">
+              <option *ngFor="let modelos of listaModelos">{{modelos.nombre_modelo}}</option>
+              <option>Cuello Cruzado</option>
+              <option>Cuello Cereza</option>
+              <option>Cremallera frontal</option>
+            </select>
+          </div>
+          <div class="form-group col-2">
+            <label for="disabledSelect" class="form-label">Talla</label>
+            <select formControlName="talla"  id="disabledSelect" class="form-select">
+              <option>XXS</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+              <option>XXXl</option>
+            </select>
+          </div>
+          <div class="form-group col-4">
+            <label for="disabledSelect" class="form-label">Color</label>
+            <select  formControlName="colorUniforme" id="disabledSelect" class="form-select">
+              <option *ngFor="let colorUniformes of listaColorUniformes">{{colorUniformes.color}}</option>
+            </select>
+          </div>
+        </div>
+          <div class="container"> 
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="card">
+                    <div class="row">
+                      <label class="form-label titulos">Embone</label>
+                      <div class="col-6 ">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Si
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              No
+                            </label>
+                          </div>
+                      </div>
+                      <div class="form-group col-6 ">
+                        <label for="disabledSelect" class="form-label">Color Embone</label>
+                        <select formControlName="colorEmbone" for="disabledSelect" class="form-select">
+                          <option>Amarillo</option>
+                          <option>Azul Rey</option>
+                          <option>Azul Aguamarina</option>
+                          <option>Azul cielo</option>
+                          <option>Blanco</option>
+                          <option>Gris Perla</option>
+                          <option>Gris Ratón</option>
+                          <option>Naranja</option>
+                          <option>Negro</option>
+                          <option>Rojo</option>
+                          <option>Rosado</option>
+                          <option>Verde Menta</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" form-group col-6">
+                <div class="row">
+                  <div class="card">
+                    <div class="row">
+                      <label class="titulos">Datos del pago</label>
+                      <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">Cancelado</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4" checked>
+                            <label class="form-check-label" for="flexRadioDefault4">Abono</label>
+                          </div>
+                      </div>
+                      <div class="col-6"> 
+                          <div>
+                            <label for="disabledSelect" class="form-label">Medio de Pago</label>
+                            <select formControlName="colorEmbone" for="disabledSelect" class="form-select">
+                              <option>Efectivo</option>
+                              <option>Bancolombia</option>
+                              <option>Daviplata</option>
+                              <option>Nequi</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="card">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="center">
+                      <button type="submit" class="btn btn-primary btn-xs redondo">Agregar item</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row">
+                      <div class="col-4 padding">
+                        <label id="center" for="disabledSelect" class="form-label">Valor Abono</label>
+                      </div>
+                      <div class="col-8 padding">
+                        <input formControlName="valorAbono" type="text" id="disabledTextInput" class="form-control" placeholder="Ingrese el valor del abono">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col-1">Cantidad</th>
+            <th scope="col-7">Descripción</th>
+            <th scope="col-2">Vr. Unitario</th>
+            <th scope="col-2">Valor Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="container col-6 center">
+          <button type="submit"  class="btn btn-primary btn-xs redondo"><img src="assets/img/icono_guardar.png"></button>
+        </div>
+        <div class="container col-6 center">
+          <button type="submit" class="btn btn-primary btn-xs redondo"><img src="assets/img/icono_imprimir.png"></button>
+        </div>
+      </div>
+    </form>
+    
+</div>

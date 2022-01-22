@@ -1,0 +1,63 @@
+.form-container{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    padding: 16px;
+    margin: 10% auto;
+    background: #f7f7f7;
+    border-radius: 12px;
+}
+
+.image{
+    max-width: 200px;
+}
+
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;    
+}
+
+.centerbutton{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px; 
+}
+
+.card{
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+}
+
+
+.form-container h1 {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background: #43d1af;
+    padding: 20px 0;
+    font-size: 300%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+   }
+
+   .redondo{
+    text-decoration: none;
+    margin: 4px;
+    max-width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #43d1af;
+    border: 2px solid #43d1af;
+  }
