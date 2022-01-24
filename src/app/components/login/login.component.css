@@ -1,23 +1,31 @@
 .form-container{
-    font: 95% Arial, Helvetica, sans-serif;
+
+    margin-top: 25%;
     max-width: 500px;
-    padding: 16px;
-    margin: 10% auto;
-    background: #f7f7f7;
-    border-radius: 12px;
+    background-color: black;
+}
+
+.flex-container{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tamanio-container{
+    width: 500px;
 }
 
 .image{
-    max-width: 200px;
+    text-align: start;
 }
-
 
 
 .center{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 20px;    
+    margin-top: auto;
+    margin-bottom: auto;    
 }
 
 .centerbutton{
@@ -27,37 +35,34 @@
     margin-bottom: 30px; 
 }
 
-.card{
-    max-width: 300px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;
-}
-
-
-.form-container h1 {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    background: #43d1af;
-    padding: 20px 0;
-    font-size: 300%;
-    font-weight: 300;
+.flex-container h1 {
+    color:#944A34;
     text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
+    margin-top:150px;
+    padding: 16px; 
+   }
+
+   .flex-container input[type="text"],
+   .flex-container input[type="password"],
+   .flex-container span{
+        color: #FE5000;
+        background-color: black;
+        border-bottom:  2px solid#FE5000;
+        border-top:black ;
+        border-left: black;
+        border-right: black;
+        margin: 0 16px;
    }
 
    .redondo{
     text-decoration: none;
-    margin: 4px;
-    max-width: 120px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+    width: 300px;
     height: 40px;
-    border-radius: 15px;
-    background-color: #43d1af;
-    border: 2px solid #43d1af;
+    background-color: #FE5000;
+    border:#FE5000;
   }
