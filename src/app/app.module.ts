@@ -22,7 +22,7 @@ import { MenuOptionComponent } from './components/menu-option/menu-option.compon
     AppComponent,
     RegistroVentasComponent,
     LoginComponent,
-    MenuOptionComponent
+    MenuOptionComponent,
   ],
   imports: [
     BrowserModule,
