@@ -1,20 +1,47 @@
 .form-container{
         font: 95% Arial, Helvetica, sans-serif;
         max-width: 800px;
-        padding: 16px;
         margin: 10px auto;
-        background: #f7f7f7;
-
+        background: black;
+        border: 2px solid #FE5000;
 }
 
 .form-container h1 {
-    background: #43d1af;
+    background-color: transparent;
+    text-align: center;
+    width: 800px;
     padding: 20px 0;
     font-size: 300%;
     font-weight: 300;
     text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    color: #FE5000;
+    margin: auto;
    }
+
+   .flex-container{
+        width: 800px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  
+    .flex-container div{
+        max-width: 250px;
+        justify-content: center;padding: auto;
+    }
+
+    .flex-container button{
+        border:2px solid #944A34;
+        padding: 10px;
+        margin: 10px;
+        background: #FE5000;
+        border-radius: 12px;
+        width: 230px;
+        max-width: 230px;
+      }
+
+      .flex-container button:hover{
+        background: #2ebc99;
+        border: 2px solid #2ebc99;
+    }
