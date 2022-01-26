@@ -3,21 +3,27 @@
     max-width: 800px;
     padding: 16px;
     margin: 10px auto;
-    background: #f7f7f7;
+    background: black;
+    border: 2px solid #FE5000 ;
 }
 
 .form-container legend{
     text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 .form-container h1 {
- background: #43d1af;
+ background: #FE5000;
  padding: 20px 0;
  font-size: 300%;
  font-weight: 300;
  text-align: center;
  color: #fff;
  margin: -16px -16px 16px -16px;
+}
+.card{
+    background-color: transparent;
 }
 
 .titulos{
@@ -62,6 +68,12 @@
     border: 2px solid #43d1af;
   }
 
+  .form-container label,
+  .form-container table{
+      color: white;
+      font-weight: bold;
+  }
+
   div.padding{
       padding-top: 1.5%;
   }
@@ -74,11 +86,11 @@
 .form-container textarea {
     transition: all 0,30s ease-in-out;
     outline: none;
+    font-weight: bold;
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 4%;
     border: 1px solid #ccc;
-    color: #555;
     font: 95% Arial, Helvetica, sans-serif;
 }
 
@@ -118,6 +130,6 @@
     max-width: 120px;
     height: 40px;
     border-radius: 15px;
-    background-color: #43d1af;
-    border: 2px solid #43d1af;
+    background-color: #FE5000;
+    border: 2px solid #FE5000;
   }
